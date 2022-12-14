@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
     "@testing-library/user-event": "latest",
+    "camelcase": "^7.0.1",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",

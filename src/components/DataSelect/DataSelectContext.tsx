@@ -9,7 +9,7 @@ export const DataSelectContext = createContext<DatasetContextType>(
   {
     dataset: '',
     setDataset: () => {},
-  } as DatasetContextType
+  }
 );
 
 export const useDataSelect = () => useContext(DataSelectContext);

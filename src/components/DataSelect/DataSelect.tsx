@@ -6,13 +6,7 @@ import {
 } from '@mui/material';
 import { useDataSelect } from './DataSelectContext';
 import { StyledSelect } from './DataSelect.styles';
-
-const PRICES = [
-  'AAP',
-  'FB',
-  'TSLA',
-  'HP',
-]
+import { DATABASE } from '../../constants';
 
 export const DataSelect: FC = () => {
   const {
@@ -33,7 +27,7 @@ export const DataSelect: FC = () => {
         value={dataset}
       >
         <MenuItem disabled value=''>Select Database</MenuItem>
-        {PRICES.map((value) => (
+        {DATABASE.map((value) => (
           <MenuItem
             key={value}
             value={value}
