@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/vitamin-test/static/js/main.782309b5.js",
+    "main.js": "/vitamin-test/static/js/main.75a7c1b3.js",
     "index.html": "/vitamin-test/index.html",
-    "main.782309b5.js.map": "/vitamin-test/static/js/main.782309b5.js.map"
+    "main.75a7c1b3.js.map": "/vitamin-test/static/js/main.75a7c1b3.js.map"
   },
   "entrypoints": [
-    "static/js/main.782309b5.js"
+    "static/js/main.75a7c1b3.js"
   ]
 }
