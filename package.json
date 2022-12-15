@@ -1,5 +1,6 @@
 {
   "name": "create-react-app-with-styled-components-typescript",
+  "homepage": "https://m-wasilewski.github.io/vitamin-test/",
   "version": "5.0.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,8 @@
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
     "@testing-library/user-event": "latest",
+    "camelcase": "^7.0.1",
+    "gh-pages": "^4.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
@@ -19,7 +22,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [

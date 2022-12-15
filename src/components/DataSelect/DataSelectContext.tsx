@@ -1,4 +1,7 @@
-import { createContext, useContext } from 'react';
+import {
+  createContext,
+  useContext,
+} from 'react';
 
 type DatasetContextType = {
   dataset: string,
@@ -9,7 +12,7 @@ export const DataSelectContext = createContext<DatasetContextType>(
   {
     dataset: '',
     setDataset: () => {},
-  } as DatasetContextType
+  }
 );
 
 export const useDataSelect = () => useContext(DataSelectContext);

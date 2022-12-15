@@ -1,9 +1,12 @@
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Toolbar from '@mui/material/Toolbar';
 import { useState } from 'react';
+import {
+  Box,
+  CssBaseline,
+  Toolbar
+} from '@mui/material';
 import { DataSelectContext } from './components/DataSelect';
 import { Header } from './components/Header';
+import { StockCharts } from './components/StockCharts';
 
 export default () => {
   const [
@@ -12,14 +15,12 @@ export default () => {
   ] = useState<string>('');
 
   return (
-    <DataSelectContext.Provider value= {{ dataset, setDataset }}>
-      <Box sx={{ display: 'flex' }}>
-        <CssBaseline />
-        <Header />
-        <Box component="main" sx={{ p: 3 }}>
-          <Toolbar />
-          <p>Selected: {dataset || 'none'}</p>
-        </Box>
+    <DataSelectContext.Provider value={{ dataset, setDataset }}>
+      <CssBaseline />
+      <Header />
+      <Box component="main" sx={{ p: 3 }}>
+        <Toolbar />
+        <StockCharts />
       </Box>
     </DataSelectContext.Provider>
   );
